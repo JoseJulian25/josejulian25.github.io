@@ -84,7 +84,7 @@ header > h1 { /*Estilo de letras al titulo*/
     border: none;
     resize: none;
     outline: none;
-    
+    Text-transforme: lowercase;
 }
 /*DImensionando el div de los botones*/
 .botones{
