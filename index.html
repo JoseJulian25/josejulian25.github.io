@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codificador Alura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="size">
+        <header>
+            <img src="Source/Vector.png" alt="icon">
+            <h1>Codificador Alura</h1>
+        </header> 
+
+            <div class="inputEncriptar2">
+                <textarea class="textcifrado" id="inputText2" readonly="readonly"></textarea> 
+                <button id="copiar" onclick="copiar()">Copiar</button>
+                    <div class="previsualizacion"> 
+                         <img id="imagen" src="/Source/buscando.png">
+                         <p id="text">Ningun mensaje fue encontrado.</p>
+                         <p id="text-2">Inserte el texto que desea encriptar o desencriptar.</p>
+                    </div>
+            </div>
+
+        <div class="inputEncriptar">
+            <textarea autocomplete="off" id="inputText1"cols="30" rows="10" placeholder="Ingrese el texto aqui..." ></textarea>
+        </div>
+
+        <div class="botones"> 
+            <button onclick="encriptar(), validarTexto()">Encriptar</button>
+            <button onclick="desencriptar(), validarTexto()">Desencriptar</button>
+                <div>
+                    <span>&#9940; No usar acentos ni caracteres especiales.</span>
+                 </div>
+        </div>
+        <footer class="iconos">
+            <ul>
+                <li><a target="blank" href="https://www.instagram.com/josej_m25" class="instagram"> <i class="fa fa-instagram"></i></a>
+                <li><a target="blank" href="https://www.linkedin.com/in/jose-julian-martinez-a79163237" class="linkedin"><i 
+                 class="fa fa-linkedin"></i></a>
+                 <li><a target="blank" href="https://github.com/JoseJulian25" class="github"><i class="fa fa-github"></i></a>
+            </ul>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
