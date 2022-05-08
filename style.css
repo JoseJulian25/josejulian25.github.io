@@ -36,6 +36,7 @@ header > h1 { /*Estilo de letras al titulo*/
     height: 480px;
     width: 65%;
 }
+
 /*Estilos al textarea de ingresar texto*/
 .inputEncriptar > textarea {
     width: 680px;
