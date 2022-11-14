@@ -3,47 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Codificador Alura</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/Source/Icon.png">
 </head>
 <body>
-    <div class="size">
-        <header>
-            <img src="Source/Vector.png" alt="icon">
-            <h1>Codificador Alura</h1>
+    <main>
+        <header class="header">
+            <img class="logo" src="Source/Vector.png" alt="icon">
+            <h1 class="titulo">Codificador Alura</h1>
         </header> 
-
-            <div class="inputEncriptar2">
-                <textarea class="textcifrado" id="inputText2" readonly="readonly"></textarea> 
-                <button id="copiar" onclick="copiar()">Copiar</button>
-                    <div class="previsualizacion"> 
-                         <img id="imagen" src="/Source/buscando.png">
-                         <p id="text">Ningun mensaje fue encontrado.</p>
-                         <p id="text-2">Inserte el texto que desea encriptar o desencriptar.</p>
-                    </div>
+        <div class="contenedor">
+            <div class="contenedor__input-encriptar">
+                <textarea class="input-encriptar"  autocomplete="off" id="inputText1"cols="30" rows="10" placeholder="Ingrese el texto aqui..." ></textarea>
+                <div class="botones"> 
+                    <button class=" boton boton-encriptar" onclick="encriptar(), validarTexto()">Encriptar</button>
+                    <button class="boton" onclick="desencriptar(), validarTexto()">Desencriptar</button>
+                        <div>
+                            <span>&#9940; No usar acentos ni caracteres especiales.</span>
+                        </div>
+                </div>
             </div>
-
-        <div class="inputEncriptar">
-            <textarea autocomplete="off" id="inputText1"cols="30" rows="10" placeholder="Ingrese el texto aqui..." ></textarea>
+           
+            <div class="contenedor__input-encriptado">
+                <textarea class="input-encriptado" id="inputText2" readonly="readonly"></textarea> 
+                <div class="previsualizacion"> 
+                    <img id="imagen" src="Source/buscando.png">
+                    <p class="previsualizacion__texto" id="text">Ningun mensaje fue encontrado.</p>
+                    <p class="previsualizacion__texto2" id="text-2">Inserte el texto que desea encriptar o desencriptar.</p>
+                </div>
+                <button class="boton-copiar" id="copiar" onclick="copiar()">Copiar</button>
+            </div>
         </div>
-
-        <div class="botones"> 
-            <button onclick="encriptar(), validarTexto()">Encriptar</button>
-            <button onclick="desencriptar(), validarTexto()">Desencriptar</button>
-                <div>
-                    <span>&#9940; No usar acentos ni caracteres especiales.</span>
-                 </div>
-        </div>
-        <footer class="iconos">
-            <ul>
-                <li><a target="blank" href="https://www.instagram.com/josej_m25" class="instagram"> <i class="fa fa-instagram"></i></a>
-                <li><a target="blank" href="https://www.linkedin.com/in/jose-julian-martinez-a79163237" class="linkedin"><i 
-                 class="fa fa-linkedin"></i></a>
-                 <li><a target="blank" href="https://github.com/JoseJulian25" class="github"><i class="fa fa-github"></i></a>
-            </ul>
-        </footer>
-    </div>
+        </main>
     <script src="script.js"></script>
 </body>
 </html>
